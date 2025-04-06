@@ -71,10 +71,12 @@ header .container {
 nav ul {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 nav ul li {
-    margin-right: 1.5rem;
+    margin: 0.3rem 0.8rem;
 }
 
 nav ul li:last-child {
@@ -84,8 +86,11 @@ nav ul li:last-child {
 nav ul li a {
     color: var(--light-text);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.95rem;
     transition: var(--transition);
+    white-space: nowrap;
+    display: block;
+    padding: 0.3rem 0.5rem;
 }
 
 nav ul li a:hover {
@@ -363,6 +368,19 @@ table tr:nth-child(even) {
     box-shadow: var(--box-shadow);
 }
 
+.slide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.slide-header h3 {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 1.3rem;
+}
+
 .slide-number {
     display: inline-block;
     background-color: var(--primary-color);
@@ -372,7 +390,6 @@ table tr:nth-child(even) {
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
-    margin-bottom: 1rem;
     font-weight: bold;
 }
 
@@ -401,25 +418,61 @@ table tr:nth-child(even) {
     margin-bottom: 0.5rem;
 }
 
-.highlight {
+.slide-highlight {
     background-color: var(--secondary-color);
     padding: 1rem;
     border-radius: var(--border-radius);
     margin: 1rem 0;
 }
 
-.quote {
+.slide-quote {
     font-style: italic;
     border-right: 3px solid var(--primary-color);
     padding-right: 1rem;
     margin: 1rem 0;
 }
 
-.grid-2 {
+.slide-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin: 1rem 0;
+}
+
+.slide-item {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.slide-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.slide-steps li {
+    margin-bottom: 0.8rem;
+}
+
+/* Lesson Header */
+.lesson-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #0c2d47 100%);
+    color: var(--light-text);
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.lesson-header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.lesson-header p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Footer */
@@ -441,12 +494,11 @@ footer {
     }
     
     nav ul {
-        flex-wrap: wrap;
         justify-content: center;
     }
     
     nav ul li {
-        margin: 0.5rem;
+        margin: 0.3rem 0.5rem;
     }
     
     .hero h1 {
@@ -457,7 +509,7 @@ footer {
         grid-template-columns: 1fr;
     }
     
-    .grid-2 {
+    .slide-grid {
         grid-template-columns: 1fr;
     }
     
@@ -495,4 +547,18 @@ footer {
     .slide-title {
         font-size: 1.2rem;
     }
+}
+
+.hero-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
