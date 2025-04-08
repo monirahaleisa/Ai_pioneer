@@ -132,13 +132,13 @@ nav ul li a: hover {
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
     line-height: 1.2;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
     max-width: 800px;
     margin-left: auto;
