@@ -93,7 +93,7 @@ nav ul li a {
     padding: 0.3rem 0.5rem;
 }
 
-nav ul li a:hover {
+nav ul li a: hover {
     color: var(--secondary-color);
 }
 /* أنماط الفيديو في الهيرو بانر */
