@@ -96,7 +96,33 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--secondary-color);
 }
+/* أنماط الفيديو في الهيرو بانر */
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 80vh; /* اضبط الارتفاع حسب الحاجة */
+}
 
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    object-fit: cover;
+    opacity: 0.7; /* اختياري: لتخفيف سطوع الفيديو */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1; /* للتأكد من ظهور النص فوق الفيديو */
+    color: #fff; /* لون النص */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* ظل للنص */
+}
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--primary-color) 0%, #0c2d47 100%);
