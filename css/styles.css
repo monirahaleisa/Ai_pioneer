@@ -100,7 +100,7 @@ nav ul li a: hover {
 .hero {
     position: relative;
     overflow: hidden;
-    height: 80vh; /* اضبط الارتفاع حسب الحاجة */
+    height: 50vh; /* اضبط الارتفاع حسب الحاجة */
 }
 
 .hero-video {
